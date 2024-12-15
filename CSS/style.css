@@ -289,6 +289,10 @@ header .logo img.site-logo {
 .newsletter-form h2{
   color:#f4c20b ;
 }
+.newsletter-form p{
+  color:#ffffff ;
+}
+
 
 .newsletter-form .form-group label {
   margin-bottom: 5px;
