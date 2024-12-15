@@ -1,0 +1,401 @@
+/* Updated styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* Updated Header - Navbar Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #232f3e; /* Amazon's dark gray color */
+  color: #ffffff; /* White text for better contrast */
+}
+
+header nav ul {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center vertically */
+  gap: 2rem; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+header nav ul li a {
+  color: #ffffff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem; /* Slightly larger text for clarity */
+  font-weight: 500; /* Semi-bold font */
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f90; /* Amazon orange hover effect */
+}
+
+header .logo img.site-logo {
+  height: 100px; /* Adjust height */
+  width: auto; /* Maintain proportion */
+}
+
+
+/* Hero Section */
+/* .hero {
+  text-align: center;
+  padding: 2rem;
+  background: #fcfcfd;
+  color: #f4c20b;
+}
+.hero p{
+  color: #333;
+} */
+/* First Hero Section with Video Background */
+.hero {
+  position: relative;
+  height: 120vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff; /* White text color */
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Place the video behind the content */
+}
+
+.hero h1, .hero p {
+  z-index: 1;
+  margin: 0.5rem;
+  font-size: 3.5rem; /* Increase font size for the heading */
+  margin-bottom: 20px;
+  color: rgba(243, 213, 20, 0.8); /* White text with transparency */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Optional: Add shadow to improve text visibility */
+}
+
+.hero p {
+  font-size: 2rem; /* Increase font size for the paragraph */
+}
+
+/* Optional: Add some padding to make text more legible */
+.hero h1, .hero p {
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.5);  /* Optional: Semi-transparent background to enhance readability */
+}
+
+
+/* Second Hero Section with Image Background */
+.hero-secondary {
+  position: relative;
+  height: 75vh;  /* Set to 60vh for height */
+  width: 100%;   /* Full width */
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+  justify-content: center;  /* Horizontally center the content */
+  flex-direction: column;  /* Align h1 and p vertically */
+  overflow: hidden;  /* Hide horizontal overflow */
+}
+
+.hero-secondary .hero-carousel {
+  display: flex;
+  width: 100%;  /* Full width */
+  transition: transform 1s ease-in-out;  /* Smooth transition */
+}
+
+.hero-secondary .hero-carousel img {
+  width: 100vw;  /* Each image will take up the full viewport width */
+  height: 100%;  /* Full height of the section */
+  object-fit: cover;  /* Ensure images cover the space */
+}
+
+.hero-secondary h1 {
+  position: absolute;
+  z-index: 1;
+  color: #f4c20b;
+  text-align: center;  /* Center the text */
+  margin: 0;
+}
+
+.hero-secondary h1 {
+  font-size: 4rem;  /* Increase font size for the heading */
+  z-index: 2;
+  margin-bottom: 0.5rem;  /* Add space between heading and paragraph */
+}
+
+.hero-secondary p {
+  font-size: 2rem;  /* Increase font size for the paragraph */
+  z-index: 2;
+  margin-top: 0;  /* Remove default margin */
+}
+
+/* Dot navigation styles */
+.dots-container {
+  position: absolute;
+  bottom: 20px;  /* Position dots at the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;  /* Space between dots */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.dot.active {
+  opacity: 1;
+  transform: scale(1.2);  /* Make the active dot bigger */
+}
+
+.dot:hover {
+  opacity: 1;  /* Show full opacity on hover */
+}
+
+
+
+/* Products pAGE */
+.products-container h2 p {
+  text-align: center;
+  padding: 2rem;
+  background: #fcfcfd;
+  color: #4a148c;
+}
+
+/* Products Section */
+.products {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 1rem;
+  color: #f4c20b;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 6rem;
+}
+
+/* Product Card Styles */
+.product-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  margin: 20px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.product-card:hover img {
+  transform: none;
+}
+
+.product-card h3 {
+  position: absolute;
+  bottom: 50px; /* Position the product name above the price */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  width: 90%;
+}
+
+.product-card p {
+  position: absolute;
+  bottom: 20px; /* Position the price below the product name */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  width: 90%;
+}
+
+.product-card:hover h3, .product-card:hover p {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.product-card img:hover {
+  transform: scale(1.1);
+}
+
+/* Newsletter Section Styling */
+
+.newsletter-form {
+  background: url('/Images/Newsletter\ Background.jpg');
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 800px; /* Set a maximum width */
+  margin: 1.5rem 9rem; /* Center the form horizontally */
+  background-color: #fff;
+  padding: 2rem;
+  color: #f4f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.newsletter-form .form-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.newsletter-form h2{
+  color:#f4c20b ;
+}
+
+.newsletter-form .form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #f4c20b;
+}
+
+.newsletter-form .form-group input{
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.newsletter-form .btn {
+  padding: 1rem;
+  background-color: #4a148c;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form .btn:hover {
+  background-color: #d9534f;
+}
+
+/* Footer Section */
+footer {
+  background-color: #232f3e; /* Amazon dark gray background */
+  color: #ffffff; /* White text for contrast */
+  padding: 30px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-section {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+footer .footer-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #f4c20b; /* White heading */
+}
+
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-section ul li {
+  margin: 5px 0;
+}
+
+footer .footer-section ul li a {
+  color: #d5d5d5; /* Light gray text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .footer-section ul li a:hover {
+  color: #f90; /* Amazon orange on hover */
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+footer .social-icons i {
+  font-size: 1.5rem;
+  color: #d5d5d5; /* Light gray icons */
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f90; /* Amazon orange hover for icons */
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #d5d5d5; /* Light gray bottom text */
+}
+
+footer .footer-bottom .footer-links a {
+  color: #d5d5d5; /* Light gray links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-bottom .footer-links a:hover {
+  color: #f90; /* Amazon orange on hover */
+}

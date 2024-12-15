@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - SHOES OUTFIT</title>
+    <link rel="stylesheet" href="CSS/products.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <img src="Images/image-removebg-preview.png" alt="SHOES OUTFIT Logo" class="site-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>SHOP ALL</h1>
+        <p>Explore our collection of fashionable shoes, designed to keep you stylish and comfortable all day long. Browse our categories:</p>
+    </section>
+
+    <!-- Product Search -->
+    <section class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for shoes..." onkeyup="searchProducts()">
+        <button id="search-button" onclick="searchProducts()">Search</button>
+    </section>
+
+    <!-- Filtering and Sorting Section -->
+    <section class="filter-sort-container">
+        <div class="filter-options">
+            <label for="category-filter">Category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="heels">Heels</option>
+                <option value="flats">Flats</option>
+                <option value="sandals">Sandals</option>
+                <option value="sneakers">Sneakers</option>
+            </select>
+
+            <label for="price-sort">Sort by Price:</label>
+            <select id="price-sort">
+                <option value="default">Default</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <div class="products-container">
+        <div class="product-grid" id="product-grid">
+            <!-- Product Cards -->
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/9.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$29.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="flats" data-price="50.00">
+                <img src="Images/10.jpg" alt="Classic Black Heels">
+                <h3>Heels Black </h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sandals" data-price="50.00">
+                <img src="Images/11.jpg" alt="Classic Black Heels">
+                <h3>Sandals High</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sandals" data-price="50.00">
+                <img src="Images/12.jpg" alt="Classic Black Heels">
+                <h3>Curvy Flat</h3>
+                <p>$58.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/13.jpg" alt="Classic Black Heels">
+                <h3>Sneakers Black </h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/14.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="flats" data-price="50.00">
+                <img src="Images/15.jpg" alt="Classic Black Heels">
+                <h3>High Black </h3>
+                <p>$90.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <var><var> <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/16.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="flats" data-price="50.00">
+                <img src="Images/17.jpg" alt="Classic Black Heels">
+                <h3>flats Shoes</h3>
+                <p>$60.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/18.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$100.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers" data-price="50.00">
+                <img src="Images/19.jpg" alt="Classic Black Heels">
+                <h3>Flat Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers" data-price="50.00">
+                <img src="Images/20.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/21.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/22.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="flats" data-price="50.00">
+                <img src="Images/23.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers" data-price="50.00">
+                <img src="Images/24.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="heels" data-price="50.00">
+                <img src="Images/25.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="flats" data-price="50.00">
+                <img src="Images/26.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sneakers" data-price="50.00">
+                <img src="Images/27.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sandals" data-price="50.00">
+                <img src="Images/28.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sandals" data-price="50.00">
+                <img src="Images/29.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="sandals" data-price="50.00">
+                <img src="Images/30.jpg" alt="Classic Black Heels">
+                <h3>Classic Black Heels</h3>
+                <p>$50.00</p>
+                <button class="quick-view" onclick="quickView('Classic Black Heels', '50.00')">Quick View</button>
+                <button class="add-to-cart" onclick="addToCart('Classic Black Heels', '50.00')">Add to Cart</button>
+            </div>
+            <!-- More product cards -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="prev" onclick="changePage('prev')">Prev</button>
+            <button class="next" onclick="changePage('next')">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Shop Shoes</h3>
+                <ul>
+                    <li><a href="Products.html">All Shoes</a></li>
+                    <li><a href="Products.html">New Arrivals</a></li>
+                    <li><a href="Products.html">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="aboutus.html">Our Story</a></li>
+                    <li><a href="aboutus.html">Careers</a></li>
+                    <li><a href="aboutus.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; 2024 SHOES OUTFIT. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="Javascript/Products.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+/* Updated styles.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: url('/Images/Contact\ Background\ 2.jpg') no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the entire page */
+  color: #333; 
+}
+
+/* Updated Header - Navbar Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: #232f3e; /* Amazon's dark gray color */
+  color: #ffffff; /* White text for better contrast */
+}
+
+header nav ul {
+  list-style: none; /* Remove bullets */
+  display: flex; /* Align items in a row */
+  align-items: center; /* Center vertically */
+  gap: 2rem; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+header nav ul li a {
+  color: #ffffff; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.1rem; /* Slightly larger text for clarity */
+  font-weight: 500; /* Semi-bold font */
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f90; /* Amazon orange hover effect */
+}
+
+header .logo img.site-logo {
+  height: 100px; /* Adjust height */
+  width: auto; /* Maintain proportion */
+}
+
+/* Main Contact Section */
+.contact-container {
+  padding: 2rem;
+  background-color: #fcfcfd;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: #4a148c;
+  margin-bottom: 1rem;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Contact Details Section */
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-details .contact-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details .contact-info {
+  text-align: left;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-details .contact-info i {
+  color: #4a148c;
+  margin-right: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.contact-form .form-group #message{
+  font-family: 'Arial', sans-serif;
+
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  padding: 1rem;
+  background-color: #4a148c;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #d9534f;
+}
+/* Footer Section */
+footer {
+  background-color: #232f3e; /* Amazon dark gray background */
+  color: #ffffff; /* White text for contrast */
+  padding: 30px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer .footer-section {
+  width: 22%;
+  margin-bottom: 20px;
+}
+
+footer .footer-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #f4c20b; /* White heading */
+}
+
+footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-section ul li {
+  margin: 5px 0;
+}
+
+footer .footer-section ul li a {
+  color: #d5d5d5; /* Light gray text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .footer-section ul li a:hover {
+  color: #f90; /* Amazon orange on hover */
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+footer .social-icons i {
+  font-size: 1.5rem;
+  color: #d5d5d5; /* Light gray icons */
+  transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+  color: #f90; /* Amazon orange hover for icons */
+}
+
+footer .footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #d5d5d5; /* Light gray bottom text */
+}
+
+footer .footer-bottom .footer-links a {
+  color: #d5d5d5; /* Light gray links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+footer .footer-bottom .footer-links a:hover {
+  color: #f90; /* Amazon orange on hover */
+}
