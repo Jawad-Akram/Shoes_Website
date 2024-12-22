@@ -1,10 +1,11 @@
 /* Updated styles.css */
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background: url('/Images/Contact\ Background\ 2.jpg') no-repeat center center fixed;
-  background-size: cover; /* Ensures the image covers the entire page */
+  background: url('/Images/Contact\ Background\ 2.jpg')cover ;
   color: #333; 
 }
 
@@ -221,4 +222,134 @@ footer .footer-bottom .footer-links a {
 
 footer .footer-bottom .footer-links a:hover {
   color: #f90; /* Amazon orange on hover */
+}
+/* Phone Screens (<600px) */
+@media (max-width: 600px) {
+  body{
+    text-align: center;
+    overflow-x: hidden;
+  }
+  header {
+    flex-direction: column;
+    padding: 0.3rem;
+    text-align: center;
+  }
+
+  header .logo img.site-logo {
+    height: 80px;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-container p {
+    font-size: 1rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details .contact-image img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  footer .footer-content {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  footer .footer-section {
+    width: 100%;
+  }
+}
+
+/* Tablet Screens (<768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  header nav ul {
+    gap: 1.5rem;
+  }
+
+  .contact-container h2 {
+    font-size: 2rem;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-details .contact-image img {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .contact-form {
+    max-width: 500px;
+    padding: 1.5rem;
+  }
+
+  footer .footer-section {
+    width: 45%;
+    text-align: center;
+  }
+}
+
+/* Laptops (<1024px) */
+@media (max-width: 1024px) {
+  .contact-container {
+    padding: 1.5rem;
+  }
+
+  .contact-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  footer .footer-section {
+    width: 30%;
+  }
+}
+
+/* Desktops (>1024px) */
+@media (min-width: 1025px) {
+  .contact-container {
+    padding: 2rem 4rem;
+  }
+
+  .contact-details {
+    gap: 3rem;
+  }
+
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  footer .footer-content {
+    justify-content: space-between;
+  }
+
+  footer .footer-section {
+    width: 25%;
+  }
 }
