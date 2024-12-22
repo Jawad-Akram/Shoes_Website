@@ -255,3 +255,70 @@ footer .social-icons li a {
 footer .social-icons li a:hover {
   color: #f90;
 }
+
+/* Phones (<600px) */
+@media (max-width: 600px) {
+      body{
+        overflow-x:hidden ;
+      }
+      .product-grid {
+          grid-template-columns: 1fr;
+      }
+
+      header nav ul {
+          flex-direction: row;
+          gap: 13px;
+      }
+
+      .search-container {
+          flex-direction: column;
+      }
+        .filter-sort-container {
+          flex-direction: column;
+          align-items: stretch;
+      }
+
+      .filter-options {
+          flex-direction: column;
+          gap: 10px;
+      }
+
+      .filter-options label {
+          font-size: 12px;
+      }
+
+      .filter-options select {
+          font-size: 12px;
+      }
+
+}
+
+/* Tablets (600px to 767px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  header nav ul {
+      gap: 15px;
+  }
+
+  .search-container {
+      gap: 5px;
+  }
+}
+
+/* Laptops and Desktops (768px and above) */
+@media (min-width: 769px) and (max-width: 1024px){
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  header nav ul {
+      gap: 20px;
+  }
+
+  .search-container {
+      flex-direction: row;
+  }
+}
