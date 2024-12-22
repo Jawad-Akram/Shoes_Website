@@ -451,12 +451,11 @@ footer .footer-bottom .footer-links a:hover {
   }
 
   header nav ul li {
-    margin: 0 1px; /* Adjust the spacing between items */
+    margin:0.7px; /* Adjust the spacing between items */
   }
 
   header nav ul li a {
     text-decoration: none;
-    padding: 1px 1px; /* Equal padding on left and right */
   }
 
   header .logo img {
